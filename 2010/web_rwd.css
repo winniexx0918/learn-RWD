@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+* {
+    font-family: 'Muli',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    position: relative;
+    padding: 0 100px;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    background: rgb(215, 203, 181);
+    z-index: -2;
+}
+.container::after {
+    content: 'Potted plant';
+    color: rgb(246 ,246 ,246);
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    z-index: -2;
+    font-size: 11vw;
+    font-weight: 600;
+    white-space: nowrap;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+nav .logo {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+}
+nav ul {
+    position: relative;
+    display: flex;
+    transition: 0.5s;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+nav ul li:nth-child(3) a,nav ul li:nth-child(4) a {
+    color: #fff;
+}
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    padding: 4px 10px;
+    color: rgb(215, 203, 181);
+}
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 8%;
+    background: rgb(115, 124, 136);
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+}
+nav ul li a:hover::before,
+nav ul li a.active::before {
+    width: 100%;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.content .bannerText {
+    position: relative;
+    max-width: 500px;
+    margin-right: 50px;
+}
+.content .bannerText article {
+    display: none;
+}
+.content .bannerText article.active {
+    display: initial;
+}
+.bannerText h2 {
+    font-size: 54px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.1em;
+    letter-spacing: 5px;
+    color: rgb(215, 203, 181);
+}
+.bannerText p {
+    font-size: 16px;
+    color: rgb(215, 203, 181);
+    font-weight: 200;
+    margin: 30px 0;
+    line-height: 1.8em;
+}
+.buttonArea {
+    display: flex;
+    justify-content: space-between;
+}
+.buttonArea .readMore {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(215, 203, 181);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px;
+    transition: 0.5s ease-in-out;
+}
+.buttonArea .readMore::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 29%;
+    height: 100%;
+    background: rgb(115, 124, 136);
+    border-radius: 20px;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+.buttonArea .readMore:hover::before {
+    width: 100%;
+    color: #fff;
+}
+.buttonArea .readMore:hover {
+    color: #fff;
+}
+.icons {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+.icons a {
+    display: inline-block;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 0px 10px;
+    color: rgb(215, 203, 181);
+}
+.icons i:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+/* 照片定位 */
+.picture {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #000;
+    margin: 0 0px 0 30px;
+    transition: 1s;
+}
+.picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    opacity: 0;
+}
+.picture img.active {
+    opacity: 1;
+}
+.controls {
+    position: absolute;
+    top: 230px;
+    right: 140px;
+}
+.controls li{
+    list-style: none;
+    padding: 40px 0;
+    font-size: 25px;
+    color: #fff;
+    opacity: 0.6;
+}
+.controls li:hover {
+    opacity: 1;
+}
+#main {
+    display: none;
+}
+.openBut {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(115, 124, 136);
+}
+@media (max-width: 1200px) {
+    .picture {
+        margin: 0 100px 0 0px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        padding: 20px 60px;
+    }
+    .container::before {
+        display: none;
+    }
+    nav {
+        padding: 0;
+    }
+    .picture {
+        margin: 20px 0;
+        width: 100%;
+        height: 40vh;
+    }
+    .controls {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        right: 0;
+    }
+    .controls li{
+        transform: rotate(-90deg);
+        color: #ccc;
+        padding: 0 20px;
+        font-size: 30px;
+    }
+    .controls li:nth-child(1){
+        color: #ccc;
+    }
+    .content .bannerText {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .container::after {
+        bottom: 0;
+        left: 0;
+        z-index: -2;
+        font-size: 11vw;
+        font-weight: 600;
+    }
+    .content {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+    .bannerText h2 {
+        font-size: 30px;
+    }
+    /* 側邊選單 */
+    nav ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 0;
+        background: rgb(215, 203, 181);
+        padding: 100px 0;
+        z-index: 20;
+        display: block;
+        overflow-x: hidden;
+    }
+    nav ul li {
+        padding: 30px 0;
+        margin: 0 0;
+        text-align: center;
+    }
+    nav ul li a {
+        font-size: 20px;
+        color: #fff !important;
+    }
+    #main,.openBut {
+        display: block;
+    }
+    .navStyle {
+        width: 250px;
+    }
+    .conStyle {
+        margin-left: 250px;
+        transition: margin-left .5s;
+}
+}

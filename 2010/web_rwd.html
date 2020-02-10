@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web RWD</title>
+    <link rel="stylesheet" href="web_rwd.css">
+    <script src="https://kit.fontawesome.com/79799480c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container" id="all">
+        <nav>
+            <a href="#" class="logo">winnie-</a>
+            <ul id="myMenu">
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <div id="main">
+                <button class="openBut" onclick="butFun();butFun1()">☰</button>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="bannerText" id="slideShowText">
+                <article class="active">
+                    <h2>stephanie<br>
+                        harvey</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis similique nostrum
+                        voluptatemat expedita aspernatur assumenda dolorum neque ullam eius! A assumenda provident
+                        veniam officiis nihil tenetur, iure quas nisi?</p>
+                </article>
+                <article>
+                    <h2>jon<br>
+                        flobrant</h2>
+                    <p>Quibusdam enim molestias quas alias deserunt similique odit facilis laboriosam optio, autem iusto
+                        error quis, itaque doloremque minus nihil necessitatibus. Officia, voluptatum. Error, vero
+                        doloribus.</p>
+                </article>
+                <article>
+                    <h2>lauren<br>
+                        mancke</h2>
+                    <p>Magnam nihil omnis error expedita possimus accusamus ratione nobis, officia vero sint! Nulla
+                        aspernatur alias, aperiam expedita nam vel laborum. Labore, iusto.Praesentium alias non
+                        voluptates iusto Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <div class="buttonArea">
+                    <a href="#" class="readMore">Read More</a>
+                    <ul class="icons">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="picture" id="sideshow">
+                <img src="image/stephanie-harvey.jpg" alt="" class="active">
+                <img src="image/jon-flobrant.jpg" alt="">
+                <img src="image/lauren-mancke.jpg" alt="">
+            </div>
+            <div>
+                <ul class="controls">
+                    <li><a><i class="fas fa-angle-up" onclick="prevSlide();prevText()"></i></a></li>
+                    <li><a><i class="fas fa-angle-down" onclick="nextSlide();nextText()"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="wed_rwd.js"></script>
+</body>
+</html>
