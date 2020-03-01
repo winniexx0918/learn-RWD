@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Noto+Sans+TC:100,300,400,500,700,900|Roboto:100,300,400,500,700,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto','Noto Sans TC','Cabin', sans-serif;
+}
+body{
+    /* height: 100%; */
+    margin: 0 auto;
+    background-image: url(image/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* background-attachment: fixed; */
+}
+/* className */
+.d-flex {
+    display: flex;
+}
+.ai-center {
+    align-items: center;
+}
+.ai-end {
+    align-items: flex-end;
+}
+.jc-center {
+  justify-content: center; /* 置中對齊 */
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
+/* ----------------------- */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    height: 1150px;
+    overflow: hidden;
+}
+.logo a img {
+    width: 180px;
+}
+.logo{
+    margin-left: 40px;
+}
+/* 主題 */
+.title {
+    list-style: none;
+    margin: 20px;
+    line-height: 70px;
+    font-weight: 300;
+}
+.title li {
+    text-align: right;
+}
+.title::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.title li:nth-child(1) {
+    font-size: 1.8rem;
+    color: #C0994C;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-left: 40px;
+}
+.title li:nth-child(2) {
+    font-size: 3.7rem;
+}
+.title li:nth-child(2) span:nth-child(1) {
+    font-size: 1.5em;
+    color: #C0994C;
+    font-weight: 600;
+}
+.title li:nth-child(2) span:nth-child(2) {
+    color: #C0994C;
+}
+.title li:nth-child(3) {
+    font-size: 3.7rem;
+}
+.title li:nth-child(4) {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    float: right;
+    color: #C0994C;
+    border: 1px solid;
+    width: 420px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+.pepole img {
+    width: 430px;
+    padding-top: 60px;
+}
+/* 五顆圈圈 */
+.circle {
+    width: 700px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+.circle li {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 8px;
+    font-size: 1.7rem;
+    font-weight: lighter;
+    line-height: 40px;
+}
+.circle li span {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #9b4842;
+}
+.circle li:nth-child(n+4) span {
+    color: #000;
+}
+.circle li:nth-child(n+4) p {
+    position: relative;
+    top: 55px;
+}
+.circle li img {
+    width: 30px;
+    padding: 30px 0 0 0;
+}
+.circle li:nth-child(1) {
+    background-image: url(image/c-1.svg);
+    background-repeat: no-repeat;
+}
+.circle li:nth-child(2) {
+    background-image: url(image/c-2.svg);
+    background-repeat: no-repeat;
+}
+.circle li:nth-child(3) {
+    background-image: url(image/c-3.svg);
+    background-repeat: no-repeat;
+}
+.circle li:nth-child(4) {
+    background-image: url(image/c-4.svg);
+    background-repeat: no-repeat;
+}
+.circle li:nth-child(5) {
+    background-image: url(image/c-5.svg);
+    background-repeat: no-repeat;
+}
+/* 包包 */
+section {
+    margin: 30px 0;
+}
+.bagarea {
+    margin: 0  80px;
+}
+.bag {
+    text-align: center;
+}
+.bag img {
+    width: 350px;
+}
+.bag p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #C0994C;
+    letter-spacing: 2px;
+}
+.eventText {
+    margin: 40px 40px 0;
+}
+.eventText ul {
+    list-style: none;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #C0994C;
+    line-height: 3.5rem;
+    letter-spacing: 2px;
+}
+.eventText ul li:nth-child(1) {
+    font-size: 1.2rem;
+    color: #C0994C;
+    border: 1px solid;
+    text-align: center;
+    width: 420px;
+    line-height: 40px;
+    float: left;
+    letter-spacing: 2px;
+}
+.eventText ul li:nth-child(2) {
+    font-size: 2.5rem;
+    clear: both;
+    padding-top: 10px;
+}
+.ch-1 {
+    position: relative;
+}
+.housearea {
+    position: absolute;
+    top: 100px;
+    right: -150px;
+    transition: ease 1s;
+}
+.house {
+    text-align: center;
+}
+.house img{
+    width: 90px;
+}
+.house a {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+.house a::before {
+    content: '3/31前體驗「秒估房貸」\A並留下聯絡資料，\A抽PHILIPS智慧抽\A萬用鍋10名';
+    white-space: pre;
+}
+.house::before {
+    content: '';
+    background-color: #C0994C;
+    width: 190px;
+    height: 190px;
+    border-radius: 100px;
+    position: absolute;
+    margin: 5px -50px;
+    z-index: -5;
+}
+/* 步驟 */
+.number {
+    width: 330px;
+}
+.number ul {
+    list-style: none;
+    font-size: 3em;
+    color: #e5ddda;
+}
+.number ul li:nth-child(1) {
+    text-transform: uppercase;
+    padding-top: 1.3em;
+    font-size: 0.7em;
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+}
+.number ul li:nth-child(2) {
+    font-size: 4em;
+    font-weight: bolder;
+}
+.number ul li:nth-child(3) {
+    font-size: 1.1em;
+    padding-top: 2.6em;
+    position: relative;
+    left: 5px;
+}
+.number p {
+    font-size: 21px;
+    letter-spacing: 2px;
+    line-height: 2em;
+    height: 100px;
+}
+.number p span {
+    color: #9E4844;
+}
+.number p a {
+    color: skyblue;
+}
+.next p{
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #e5ddda;
+    margin: 0 10px 30px 10px;
+    transform: scaleY(4);
+}
+.linePlus {
+    padding-top: 70px;
+    position: relative;
+}
+.linePlus div:nth-child(1) img{
+    width: 180px;
+    margin-right: 50px;
+}
+.linePlus div:nth-child(2) img {
+    width: 160px;
+    margin-right: 30px;
+}
+.linePlus p {
+    font-size: 2.5em;
+    color: #C0994C;
+}
+.linePlus::before {
+    content: '';
+    width: 90%;
+    height: 180px;
+    border: 1px solid;
+    border-radius: 100px;
+    color: #C0994C;
+    position: absolute;
+    bottom: 50px;
+    z-index: -3;
+}
+.nowPlus {
+    text-align: center;
+}
+.nowPlus a,.nowPlus div a {
+    text-decoration: none;
+    display: inline-block;
+    color: #C0994C;
+    font-size: 2em;
+    width: 200px;
+    height: auto;
+    border: 3px solid;
+    border-radius: 100px;
+    padding: 20px;
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+.nowPlus div a {
+    width: 500px;
+    margin-top: 40px;
+}
+.nowPlus a:hover {
+    color: #fff;
+}
+.nowPlus a::before{
+    content: '';
+    position: absolute;
+    width: 180%;
+    height: 250%;
+    background: #C0994C;
+    transform: rotate(15deg); 
+    left: -160%;
+    top: 50%;
+    z-index: -1;
+}
+.nowPlus a:hover::before{
+    animation: btnhover .5s;
+    top: -50%;
+    left: -20%;
+}
+@keyframes btnhover {
+    0%{
+        top: 150%;
+        left: -80%;
+    }
+    50%{
+        top: -150%;
+        left: -10%;
+    }
+    100%{
+        top: -50%;
+        left: -20%;
+    }
+}
+.notice {
+    margin: 50px 0;
+    position: relative;
+}
+.notice ul {
+    list-style: none;
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: #C0994C;
+}
+.notice ul li img {
+    width: 20px;
+}
+.notice ul li {
+    padding: 0 10px;
+}
+.notice::before, .notice::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background: #C0994C;
+    width: 41%;
+    height: 1px;
+}
+.notice::before {
+    left: 0;
+}
+.notice::after {
+    right: 0;
+}
+#myBut {
+    display: none;
+    position: fixed;
+    bottom: 140px;
+    right: 80px;
+    border-radius: 50px;
+    background: #000;
+    opacity: 0.5;
+    cursor: pointer;
+    width: 60px;
+}
+#myBut:hover {
+    opacity: 1;
+}
+footer {
+    background: #000;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 1.5em;
+}
+footer img {
+    width: 40px;
+    margin: 0 10px;
+}
+@media (max-width:1640px) {
+    .housearea {
+        right: -100px;
+    }
+}
+@media (max-width:1540px) {
+    .bagarea {
+        margin: 0 100px;
+    }
+    .housearea {
+        right: 100px;
+    }
+}
+@media (max-width:1200px) {
+    .housearea {
+        right: 120px;
+    }
+}
+@media (max-width:1153px) {
+    header {
+        height: 1050px;
+    }
+    .pepole{
+        position: absolute;
+        top: 180px;
+        left: 2%;
+        z-index: -1;
+    }
+    body{
+        background-position: 37% 80%;
+    }
+    .notice {
+        margin: 50px 10px 90px;
+    }
+    .notice::before, .notice::after {
+        width: 40%;
+    }
+}
+@media (max-width:1135px) {
+    .number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height: 300px;
+    }
+    .number ul {
+        display: inline-block;
+    }
+    .number ul li:nth-child(1) {
+        display: none;
+    }
+    .number ul li:nth-child(2) {
+        font-size: 5em;
+    }
+    .number ul li:nth-child(3) {
+        font-size: 1.4em;
+        padding-top: 0;
+        position: relative;
+        top: -50px;
+    }
+    .number p {
+        font-size: 25px;
+        height: 150px;
+        padding: 0 20px;
+        margin-left: 20px;
+        letter-spacing: 4px;
+    }
+    .next {
+        transform: rotate(90deg);
+    }
+    .next p {
+        display: inline-block;
+        margin: 0;
+        transform: scaleY(4);
+    }
+    .f-col {
+        flex-direction: column;
+    }
+    .notice::before, .notice::after {
+        width: 39%;
+    }
+    .housearea {
+        right: 80px;
+    }
+}
+@media (max-width:1000px) {
+    .housearea {
+        right: 150px;
+    }
+    .house img {
+        width: 50px;
+    }
+    .house a::before {
+        content: '秒估房貸\A抽獎';
+    }
+    .house::before {
+        content: '';
+        background-color: #C0994C;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        position: absolute;
+        margin: 5px -25px;
+        z-index: -5;
+    }
+}
+@media (max-width:970px) {
+    .housearea {
+        right: 100px;
+    }
+    .house img {
+        width: 50px;
+    }
+    .house a::before {
+        content: '秒估房貸\A抽獎';
+    }
+    .house::before {
+        content: '';
+        background-color: #C0994C;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        position: absolute;
+        margin: 5px -25px;
+        z-index: -5;
+    }
+}
+@media (max-width:950px) {
+    .linePlus {
+        margin-top: 80px;
+        padding-top: 40px;
+    }
+    .linePlus::before {
+        content: '';
+        width: 90%;
+        height: 1px;
+        border: none;
+        border-bottom: 2px solid;
+        bottom: 12px;
+    }
+    .linePlus::after {
+        content: '';
+        width: 90%;
+        height: 1px;
+        border-top: 2px solid;
+        color: #C0994C;
+        top: 11px;
+        position: absolute;
+    }
+    .nowPlus {
+        margin: 70px;
+    }
+    .notice::before, .notice::after {
+        width: 38%;
+    }
+    .bagarea {
+        margin: 0;
+    }
+}
+@media (max-width:920px) {
+    .qrCode {
+        flex-direction: column;
+    }
+    .qrCode p {
+        font-size: 2.3em;
+    }
+    .linePlus {
+        align-items: flex-start;
+    }
+    .linePlus div:nth-child(2) img {
+        width: 170px;
+        margin-right: 30px;
+    }
+    .notice::before, .notice::after {
+        width: 36%;
+    }
+}
+@media (max-width:800px) {
+    .notice::before, .notice::after {
+        width: 33%;
+    }
+    .nowPlus a {
+        margin: 0 10px;
+    }
+    .housearea {
+        right: 50px;
+    }
+}
