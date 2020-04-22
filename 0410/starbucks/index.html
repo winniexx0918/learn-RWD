@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statbuck</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://kit.fontawesome.com/79799480c9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <ul>
+                    <li class="logo"><img src="images/starbucks-Logo.png" alt=""></li>
+                    <li>coffe</li>
+                    <li>tea</li>
+                    <li>gft cards</li>
+                    <li><i class="fas fa-map-marker-alt"></i>finda store</li>
+                </ul>
+            </div>
+        </div>
+        <article class="content animated bounceInLeft">
+            <h1 class="title">Frappuccino!</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores esse modi distinctio cumque eius officia animi, pariatur nulla, quidem quis amet.</p>
+        </article>
+        <section>
+            <div class="main_img animated bounceInRight">
+              <img src="images/frappuccino.png" alt="">
+            </div>
+        </section>
+        <section id="menu" class="">
+            <div class="menu">
+              <div class="slidesShow">
+                <div class="yt animated slideInUp delay-1s"><img src="images/frappuccino1.png" alt="" /></div>
+                <div class="yt animated slideInUp delay-2s"><img src="images/frappuccino2.png" alt="" /></div>
+                <div class="yt animated slideInUp delay-3s"><img src="images/frappuccino3.png" alt="" /></div>
+                <div class="yt"><img src="images/frappuccino4.png" alt="" /></div>
+                <div class="yt"><img src="images/frappuccino5.png" alt="" /></div>
+                <div class="yt"><img src="images/frappuccino6.png" alt="" /></div>
+              </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+          $(".slidesShow").slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+          });
+        });
+      </script>
+      <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+</body>
+</html>

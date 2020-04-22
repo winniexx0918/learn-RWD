@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    color: #fff;
+}
+body{
+    background: linear-gradient(to right, #285f43 75%, #d9b689 75%);
+}
+.container{
+    margin: 0 auto;
+    width: 1280px;
+    /* height: 900px; */
+    /* overflow: hidden; */
+}
+.nav{
+    height: 50px;
+    margin-top: 20px;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.nav ul li{
+    margin-right: 40px;
+    font-size: 1em;
+    font-weight: 100;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.nav ul li i{
+    margin-right: 5px;
+}
+.nav img{
+    width: 70px;
+}
+.content{
+    position: relative;
+    top: 100px;
+}
+.content .title{
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 8em;
+    position: relative;
+}
+.content .title::before{
+    content: 'Grab Your';
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: 400;
+    left: 8%;
+    top: 10%;
+}
+.content p{
+    width: 40%;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    line-height: 2em;
+}
+.main_img{
+    position: absolute;
+    top: 50px;
+    right: 80px;
+}
+.main_img img{
+    width: 650px;
+}
+.main_img::before{
+    content: 'Chocolate';
+    font-family: 'Caveat', cursive;
+    font-size: 7em;
+    transform: rotate(265deg);
+    position: absolute;
+    left: -50px;
+    bottom: 180px;
+    z-index: -1;
+    opacity: 0.5;
+}
+#menu{
+    position: absolute;
+    top: 600px;
+}
+#menu::before{
+    content: '';
+    width: 1000px;
+    height: 300px;
+    background: #fff;
+    position: absolute;
+    left: -300px;
+    border-top-right-radius: 50px;
+}
+.menu{
+    width: 800px;
+    height: 250px;
+    position: relative;
+    bottom: -50px;
+    left: -130px;
+    outline: none;
+}
+.menu .slidesShow img{
+    height: 200px;
+    margin: 10px;
+    outline: none;
+    margin: auto;
+    position: relative;
+}
+.menu .slidesShow div{
+    height: 250px;
+}
+.yt{
+    outline: none;
+}
+.menu .slidesShow .yt::before{
+    content: '';
+    width: 180px;
+    height: 150px;
+    background: #285f43;
+    position: absolute;
+    top: 120px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
